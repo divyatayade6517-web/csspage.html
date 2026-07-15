@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Form page</title>
+        <meta name="description" content="">
+        <style>
+            h2{
+                color: red;
+                background-color: aquamarine;
+            }
+            table{
+                background-attachment: yellow;
+                color: darkmagenta;
+            }
+            button{
+                background-color: rgb(255, 0, 38);
+                
+            }
+        </style>
+
+    </head>
+
+    <body style="background-color: lightgreen;">
+
+        <br><hr><br>
+
+        <div align="center">
+
+            <h2>Company Level Task</h2>
+
+            <form action="#No_action" method="post">
+                <fieldset style="width:450px; border:2px solid black; padding:20px; background-color:white;">
+
+
+                <table border="0" cellpadding="10">
+
+                    <tr>
+                        <td>Name :</td>
+                        <td>
+                            <input type="text" name="name"
+                            placeholder="Enter your name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DOB :</td>
+                        <td>
+                            <input type="date" name="date"
+                            placeholder="Enter your DOB" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender : </td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Male<br>
+                            <input type="radio" name="gender" value="female">Female<br>
+                            <input type="radio" name="gender" value="Other">Other<br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Country Name :</td>
+                        <td>
+                            <select name="country" id="country" required>
+                                <option value="">Select a Country</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Korea">Korea</option>
+                                <option value="Turkey">Turkey</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Known Tehnologies : </td>
+                        <td>
+                            <input type="checkbox" name="known Tehnologies" value="PYTHON">PYTHON<br>
+                            <input type="checkbox" name="known Tehnologies" value="JAVA">JAVA<br>
+                            <input type="checkbox" name="known Tehnologies" value="DATA ANALITICS">DATA ANALITICS<br>
+                            <input type="checkbox" name="known Tehnologies" value="HTML">HTML<br>
+                            <input type="checkbox" name="known Tehnologies" value="CSS">CSS<br>
+                            <input type="checkbox" name="known Tehnologies" value="DATA SCIENCE">DATA SCIENCE<br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Address :</td>
+                        <td>
+                            <textarea name="address" rows="4" cols="40"
+                            placeholder="Enter your address" required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
